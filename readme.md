@@ -39,7 +39,7 @@ $ composer install
 **3. open project locally**
 
 
-##Packages & documentation: <br>
+## Packages & documentation: <br>
 
 * [Nikic/Fast-route](https://github.com/nikic/FastRoute) - request router
 * [Doctrine/Dbal](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/) - database abstraction layer
