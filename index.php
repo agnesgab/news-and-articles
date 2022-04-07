@@ -2,16 +2,12 @@
 
 use App\Redirect;
 use App\Repositories\Admin\AdminRepository;
-use App\Repositories\Admin\CSVAdminRepository;
 use App\Repositories\Admin\MysqlAdminRepository;
 use App\Repositories\Article\ArticleRepository;
-use App\Repositories\Article\CSVArticleRepository;
 use App\Repositories\Article\MysqlArticleRepository;
 use App\Repositories\Category\CategoryRepository;
-use App\Repositories\Category\CSVCategoryRepository;
 use App\Repositories\Category\MysqlCategoryRepository;
 use App\Repositories\Comment\CommentRepository;
-use App\Repositories\Comment\CSVCommentRepository;
 use App\Repositories\Comment\MysqlCommentRepository;
 use App\View;
 use FastRoute\Dispatcher;
