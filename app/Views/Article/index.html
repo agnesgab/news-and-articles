@@ -1,0 +1,26 @@
+{{ include('templates/header.html') }}
+<div class="container">
+    <h1>{{ category }}</h1>
+    <div class="row">
+        {% for article in articles %}
+        <div class="card col-sm-4" style="width: 15rem;">
+            <div class="img-fallback-color">
+                <img class="card-img-top small" src="../public/images/{{ article.id}}.jpg">
+            </div>
+            <div class="card-body">
+                <a href="/show/{{ article.id }}"><h5 class="card-title">{{ article.title }}</h5></a>
+                {% if isAdmin %}
+                <div class="button-pair">
+                    <form method="get" action="/edit/{{ article.id }}">
+                        <button class="btn btn-primary">Edit</button>
+                    </form>
+                    <form method="post" action="/delete/{{ article.id }}">
+                        <button class="btn btn-primary" type="submit" onclick="confirm('Are you sure?')">Delete</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

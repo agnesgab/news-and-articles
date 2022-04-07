@@ -1,0 +1,21 @@
+{{ include('templates/header.html') }}
+<div id="admin-login-form" class="create-form">
+    <h2 class="header">Edit</h2>
+    <div>
+        <form method="post" action="/edit/{{ article.id }}">
+            <label>Title</label>
+            <input type="text" name="title" value="{{ article.title }}">
+            <label>Text</label>
+            <textarea name="text">{{ article.text }}</textarea>
+            <label>Category</label>
+            <select name="category">
+                {% for category in categories %}
+                <option value="{{ category.categoryId }}" selected="{{ article.categoryId }}">{{ category.categoryName }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Update</button>
+        </form>
+
+    </div>
+    <a class="cancel" href="/show/{{ article.id }}">Cancel</a>
+</div>

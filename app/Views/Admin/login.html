@@ -1,0 +1,11 @@
+{{ include('templates/header.html') }}
+<div id="admin-login-form">
+    <h2 class="header">Log in</h2>
+    <div>
+        <form method="post" action="/login">
+            <input type="text" name="admin-name" placeholder="Name">
+            <input type="password" name="admin-password" placeholder="Password">
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</div>

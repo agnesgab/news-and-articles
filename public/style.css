@@ -1,0 +1,191 @@
+header {
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px 25px 70px;
+}
+
+#logo-link, #logo-link:link {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.nav-links a, .nav-links a:link, a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.link-button {
+    background-color: #c4c4f8;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.link-button:hover {
+    color: #FFF;
+}
+
+.card {
+    margin: 15px;
+    text-align: center;
+}
+
+.image-large {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+
+.card-img-top {
+    object-fit: cover;
+    background-color: rgba(100, 149, 237, 0.42);
+    height: 250px;
+}
+
+.img-fallback-color-small {
+    height: 180px;
+    color: cornflowerblue;
+}
+
+.small {
+    height: 180px;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px 40px;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comments-container .card-body {
+    text-align: left;
+}
+
+.comment-card {
+    width: 40% !important;
+}
+
+.form-wrapper {
+    align-self: center;
+}
+
+#admin-login-form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+}
+
+#admin-login-form * {
+    box-sizing: border-box;
+}
+
+#admin-login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#admin-login-form input {
+    display: block;
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+#admin-login-form label {
+    color: #777;
+    font-size: 0.8em;
+}
+
+#admin-login-form button[type=submit] {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    background: #207cca; /* Old browsers */
+}
+
+.cancel {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: rgba(156, 154, 154, 0.91);
+    border: none;
+}
+
+.create-form {
+    width: 70% !important;
+}
+
+.create-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-form textarea {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.create-form select {
+    width: 200px;
+}
+
+.button-pair {
+    display: flex;
+    justify-content: center;
+}
+
+.button-pair button {
+    margin: 0 5px;
+    width: 80px;
+}
+
+h1 {
+    text-align: center;
+}

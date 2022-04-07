@@ -1,0 +1,30 @@
+<div class="comments-container">
+    {% for comment in comments %}
+    <div class="card w-75 comment-card">
+        <div class="card-body">
+            <h5 class="card-title">{{ comment.username }}</h5>
+            <p class="card-text">{{ comment.comment }}</p>
+            <small>{{ comment.createdAt }}</small>
+            {% if isAdmin %}
+            <form method="post" action="/show/{{ article.id }}/delete/comment/{{ comment.id }}">
+                <button class="btn btn-primary" type="submit">Delete</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+    {% if isAdmin == false %}
+    <div id ="admin-login-form" class="comment-card">
+        <label>Add comment:</label>
+        <form method="post" action="/show/{{ article.id }}">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <textarea class="form-control" name="comment"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </div>
+    {% endif %}
+</div>
