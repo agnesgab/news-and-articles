@@ -47,7 +47,7 @@ class ArticlesController
         $articleId = (int)$vars['id'];
         $request = new ArticleShowRequest($articleId);
 
-        //Returned data in Article object
+        //Returned data as Article object
         $service = $this->container->get(ArticleShowService::class);
         $response = $service->execute($request);
 
@@ -92,7 +92,7 @@ class ArticlesController
         $service = $this->container->get(ArticleEditService::class);
         $response = $service->execute($request);
 
-        //Getting all available categories, for possibility to edit article category
+        //Getting all available categories for possibility to edit article category
         $categoriesService = $this->container->get(CategoryIndexService::class);
         $categories = $categoriesService->execute()->getCategories();
 
