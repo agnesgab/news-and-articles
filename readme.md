@@ -44,6 +44,6 @@ $ composer install
 * [Nikic/Fast-route](https://github.com/nikic/FastRoute) - request router
 * [Doctrine/Dbal](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/) - database abstraction layer
 * [Twig](https://twig.symfony.com/doc/3.x/) - template language for PHP
-* [PHP-DI](https://php-di.org/doc/) - The dependency injection container for PHP
+* [PHP-DI](https://php-di.org/doc/) - dependency injection container for PHP
 
 
